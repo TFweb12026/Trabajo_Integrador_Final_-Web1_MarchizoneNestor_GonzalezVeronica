@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NodeStack — Soluciones en Bases de Datos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-row">
+      <a href="index.html" class="logo">Node<span>Stack</span></a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-row">
+        <div class="hero-text">
+          <p class="eyebrow">gestión y administración de datos</p>
+          <h1>Tus datos, ordenados,<br>seguros y disponibles.</h1>
+          <p class="hero-desc">
+            Diseñamos, migramos y mantenemos bases de datos para empresas que no
+            pueden darse el lujo de perder información. Del modelado a la puesta
+            en producción, nos ocupamos de que todo funcione.
+          </p>
+          <a href="contacto.html" class="btn-primary">Conversemos sobre tu proyecto</a>
+        </div>
+
+        <div class="hero-table" aria-hidden="true">
+          <div class="table-header">
+            <span>id</span><span>tabla</span><span>estado</span>
+          </div>
+          <div class="table-row">
+            <span>01</span><span>clientes</span><span class="ok">activo</span>
+          </div>
+          <div class="table-row">
+            <span>02</span><span>pedidos</span><span class="ok">activo</span>
+          </div>
+          <div class="table-row">
+            <span>03</span><span>backups</span><span class="ok">activo</span>
+          </div>
+          <div class="table-row">
+            <span>04</span><span>logs</span><span class="pending">sincronizando</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="carousel-section">
+      <div class="container">
+        <p class="eyebrow">proyectos recientes</p>
+        <div class="carousel" id="carousel">
+          <div class="carousel-track" id="carousel-track">
+            <figure class="slide">
+              <img src="imagenes/Monitoreo en tiempo real de rendimiento.jpeg" alt="Panel de monitoreo de una base de datos en producción">
+              <figcaption>Monitoreo en tiempo real de rendimiento</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="imagenes/Diagrama entidad-relación dibujado en una pizarra.jpeg" alt="Diagrama entidad-relación dibujado en una pizarra">
+              <figcaption>Modelado de esquemas a medida</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="imagenes/Migraciones sin tiempo de inactividad.jpeg" alt="Servidores en un centro de datos">
+              <figcaption>Migraciones sin tiempo de inactividad</figcaption>
+            </figure>
+          </div>
+          <button class="carousel-btn prev" id="prev-btn" aria-label="Ver proyecto anterior">&#8592;</button>
+          <button class="carousel-btn next" id="next-btn" aria-label="Ver siguiente proyecto">&#8594;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-teaser">
+      <div class="container">
+        <p class="eyebrow">qué hacemos</p>
+        <h2>Tres formas de trabajar juntos</h2>
+
+        <div class="services-row">
+          <article class="service-card">
+            <span class="service-tag">design</span>
+            <h3>Diseño de bases de datos</h3>
+            <p>Modelado, normalización y migración de datos existentes a una
+              estructura que escala con tu negocio.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-tag">ops</span>
+            <h3>Administración (DBA)</h3>
+            <p>Mantenimiento, backups automatizados y optimización de consultas
+              para que el sistema no falle cuando más lo necesitás.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-tag">data</span>
+            <h3>Consultoría y Big Data</h3>
+            <p>Análisis de datos e integración con la nube para que tomes
+              decisiones con información real, no con corazonadas.</p>
+          </article>
+        </div>
+
+        <a href="servicios.html" class="btn-secondary">Ver todos los servicios</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div class="footer-col">
+        <p class="logo">Node<span>Stack</span></p>
+        <p>Soluciones en bases de datos para empresas que crecen.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <p>hola@nodestack.dev</p>
+        <p>+54 9 2657503681</p>
+      </div>
+    </div>
+    <div class="container">
+      <p class="footer-meta"> 2026 NodeStack. Trabajo Final Integrador.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
