@@ -3,25 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicios — NodeStack</title>
+
+  <title>Contacto — NodeStack</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
   <header class="site-header">
     <div class="container header-row">
+
       <a href="index.html" class="logo">Node<span>Stack</span></a>
 
       <nav class="main-nav">
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="servicios.html" class="active">Servicios</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
         </ul>
       </nav>
+
     </div>
   </header>
 
@@ -29,52 +36,88 @@
 
     <section class="hero">
       <div class="container">
-        <p class="eyebrow">nuestros servicios</p>
 
-        <h1>Soluciones para<br>tus datos.</h1>
+        <p class="eyebrow">hablemos de tu proyecto</p>
+
+        <h1>Contactanos.<br>Estamos para ayudarte.</h1>
 
         <p class="hero-desc">
-          Ofrecemos soluciones integrales para diseñar, administrar,
-          proteger y optimizar bases de datos.
+          Contanos qué necesita tu empresa y te ayudaremos a encontrar
+          la mejor solución para tus bases de datos.
         </p>
+
       </div>
     </section>
 
     <section class="services-teaser">
       <div class="container">
 
-        <p class="eyebrow">qué ofrecemos</p>
+        <p class="eyebrow">contacto</p>
 
-        <div class="services-row">
+        <h2>Envianos tu consulta</h2>
 
-          <article class="service-card">
-            <span class="service-tag">design</span>
-            <h3>Diseño de bases de datos</h3>
-            <p>
-              Diseñamos estructuras de bases de datos organizadas,
-              eficientes y adaptadas a las necesidades de cada empresa.
-            </p>
-          </article>
+        <form id="contact-form">
 
-          <article class="service-card">
-            <span class="service-tag">ops</span>
-            <h3>Administración de bases de datos</h3>
-            <p>
-              Realizamos mantenimiento, backups y optimización para
-              garantizar el correcto funcionamiento de los sistemas.
-            </p>
-          </article>
+          <p>
+            <label for="nombre">Nombre completo</label><br>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingresá tu nombre"
+              required
+            >
+          </p>
 
-          <article class="service-card">
-            <span class="service-tag">data</span>
-            <h3>Consultoría y Big Data</h3>
-            <p>
-              Analizamos información y desarrollamos soluciones para
-              aprovechar los datos y facilitar la toma de decisiones.
-            </p>
-          </article>
+          <p>
+            <label for="email">Correo electrónico</label><br>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="ejemplo@correo.com"
+              required
+            >
+          </p>
 
-        </div>
+          <p>
+            <label for="telefono">Teléfono</label><br>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              placeholder="Ingresá tu teléfono"
+              required
+            >
+          </p>
+
+          <p>
+            <label for="servicio">Servicio de interés</label><br>
+            <select id="servicio" name="servicio" required>
+              <option value="">Seleccioná un servicio</option>
+              <option value="diseno">Diseño de bases de datos</option>
+              <option value="administracion">Administración de bases de datos</option>
+              <option value="consultoria">Consultoría y Big Data</option>
+              <option value="otro">Otro</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="mensaje">Mensaje</label><br>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              placeholder="Contanos sobre tu proyecto"
+              required
+            ></textarea>
+          </p>
+
+          <button type="submit" class="btn-primary">
+            Enviar consulta
+          </button>
+
+        </form>
 
       </div>
     </section>
@@ -113,3 +156,4 @@
 
 </body>
 </html>
+```

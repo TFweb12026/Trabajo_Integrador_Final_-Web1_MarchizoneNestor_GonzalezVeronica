@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Contacto — NodeStack</title>
-
+  <link rel="icon" href="data:,">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -56,62 +59,40 @@
 
         <h2>Envianos tu consulta</h2>
 
-        <form id="contact-form">
+        <form id="contact-form" novalidate>
 
-          <p>
-            <label for="nombre">Nombre completo</label><br>
-            <input
-              type="text"
-              id="nombre"
-              name="nombre"
-              placeholder="Ingresá tu nombre"
-              required
-            >
-          </p>
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" autocomplete="name" required>
+          </div>
 
-          <p>
-            <label for="email">Correo electrónico</label><br>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="ejemplo@correo.com"
-              required
-            >
-          </p>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" autocomplete="email" required>
+          </div>
 
-          <p>
-            <label for="telefono">Teléfono</label><br>
-            <input
-              type="tel"
-              id="telefono"
-              name="telefono"
-              placeholder="Ingresá tu teléfono"
-              required
-            >
-          </p>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ingresá tu teléfono" autocomplete="tel"
+              required>
+          </div>
 
-          <p>
-            <label for="servicio">Servicio de interés</label><br>
-            <select id="servicio" name="servicio" required>
+          <div class="form-group">
+            <label for="servicio">Servicio de interés</label>
+            <select id="servicio" name="servicio" autocomplete="off" required>
               <option value="">Seleccioná un servicio</option>
               <option value="diseno">Diseño de bases de datos</option>
               <option value="administracion">Administración de bases de datos</option>
               <option value="consultoria">Consultoría y Big Data</option>
               <option value="otro">Otro</option>
             </select>
-          </p>
+          </div>
 
-          <p>
-            <label for="mensaje">Mensaje</label><br>
-            <textarea
-              id="mensaje"
-              name="mensaje"
-              rows="5"
-              placeholder="Contanos sobre tu proyecto"
-              required
-            ></textarea>
-          </p>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contanos sobre tu proyecto" autocomplete="off"
+              required></textarea>
+          </div>
 
           <button type="submit" class="btn-primary">
             Enviar consulta
@@ -153,7 +134,7 @@
       <p class="footer-meta">2026 NodeStack. Trabajo Final Integrador.</p>
     </div>
   </footer>
-
+  <script src="script.js"></script>
 </body>
+
 </html>
-```
